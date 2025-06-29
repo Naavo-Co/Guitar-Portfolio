@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Guitar, Music, Play, ShoppingCart, User, Home, BookOpen, Mail, Instagram, Youtube, Twitter } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Guitar, User, Home, BookOpen, Mail, Instagram, Youtube, Twitter } from 'lucide-react';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import CoursesSection from './components/CoursesSection';
@@ -94,7 +94,7 @@ function App() {
             className={`nav-link ${currentSection === 'portfolio' ? 'active' : ''}`}
             onClick={() => scrollToSection('portfolio')}
           >
-            <Music size={16} />
+            <Guitar size={16} />
             Portfolio
           </button>
           <button
@@ -140,15 +140,15 @@ function App() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.7 }}
       >
-        <a href="#" className="social-link">
+        <button className="social-link">
           <Instagram size={20} />
-        </a>
-        <a href="#" className="social-link">
+        </button>
+        <button className="social-link">
           <Youtube size={20} />
-        </a>
-        <a href="#" className="social-link">
+        </button>
+        <button className="social-link">
           <Twitter size={20} />
-        </a>
+        </button>
       </motion.div>
 
       {/* Background Music Visualizer */}

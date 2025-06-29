@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Clock, Users, Music, Guitar, Play, Star } from 'lucide-react';
+import { Award, Clock, Users, Guitar, Play, Star } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
   const skills = [
